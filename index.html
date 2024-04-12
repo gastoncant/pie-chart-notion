@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Charts Pie Chart</title>
+  <!-- Carga la librería de Google Charts -->
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    // Carga el paquete de visualización y los gráficos que deseas usar
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+      // Define los datos
+      var data = google.visualization.arrayToDataTable([
+        ['Category', 'Amount'],
+        ['Housing', 1000],
+        ['Transportation', 600],
+        ['Food', 300],
+        ['Utilities', 400],
+        ['Entertainment', 200]
+      ]);
+
+      // Configura las opciones del gráfico
+      var options = {
+        title: 'My Financial Expenses',
+        pieHole: 0.4,
+      };
+
+      // Crea el gráfico
+      var chart = new google.visualization.PieChart(document.getElementById('googleChart'));
+
+      // Dibuja el gráfico con los datos y opciones proporcionados
+      chart.draw(data, options);
+    }
+  </script>
+</head>
+<body>
+  <div id="googleChart" style="width: 100%; height: 500px;"></div>
+</body>
+</html>
+
