@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finances</title>
+  <title>Personal finances</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     body {
@@ -11,7 +11,7 @@
       margin: 0;
       padding: 0;
       background: radial-gradient(circle, #1d1d1d, #121212);
-      color: #fff;
+      color: #333;
     }
 
     #container {
@@ -19,14 +19,15 @@
       margin: 20px auto;
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       padding: 20px;
     }
 
     h1 {
       text-align: center;
       margin-bottom: 20px;
-      color: #007bff;
+      color: #333;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     }
 
     form {
@@ -36,7 +37,6 @@
 
     label {
       margin-bottom: 5px;
-      color: #333;
     }
 
     input {
@@ -51,9 +51,10 @@
       border: none;
       border-radius: 5px;
       background-color: #007bff;
-      color: #fff;
+      color: #333;
       cursor: pointer;
       transition: background-color 0.3s ease;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     }
 
     button:hover {
@@ -63,6 +64,7 @@
     canvas {
       width: 100%;
       height: auto;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
@@ -125,7 +127,7 @@
               font: {
                 size: 18
               },
-              color: '#007bff'
+              color: '#333f'
             },
             legend: {
               position: 'bottom',
