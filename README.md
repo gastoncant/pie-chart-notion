@@ -35,4 +35,4 @@ The HTML file includes a script that uses Google Charts to draw a pie chart.
     var chart = new google.visualization.PieChart(document.getElementById('googleChart'));
     chart.draw(data, options);
   }
-</script>
+</script> 
